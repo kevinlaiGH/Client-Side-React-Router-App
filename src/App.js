@@ -1,19 +1,24 @@
 import React from 'react';
 import Header from './components/layout/Header';
 import Sidebar from './components/layout/Sidebar';
+import { HashRouter as Router, Route } from 'react-router-dom';
+import Home from './components/Home';
 
 const App = () => {
 
     return (
-        <div>
-            <Header/>
-            <Sidebar/>
-            <div className='rightContentContainer'>
+        <Router>
+            <div>
+                <Header />
+                <Sidebar />
+                <div className='rightContentContainer'>
+                    <switch>
+                        <Route path='/' component={Home} exact={true} />
+                    </switch>
 
-                <h1>Welcome to the Course</h1>
-
+                </div>
             </div>
-        </div>
+        </Router >
     );
 };
 
