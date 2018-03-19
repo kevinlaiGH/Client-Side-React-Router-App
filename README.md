@@ -1,3 +1,3 @@
 # ps-router-demo
 
-A project used to demo the capabilities of React Router 4.
+1. <switch> </switch> component , return the route that matches

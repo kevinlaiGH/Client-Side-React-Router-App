@@ -5,7 +5,9 @@ const Sidebar = () => {
 
     return (
         <div className={'leftNavContainer'}>
-            <Link to='/' className='navLink'>Home</Link >
+            <Link to='/' className='navLink'>Home</Link ><br />
+            <Link to='/prompt' className='navLink'>Prompt</Link ><br />
+            <Link to='/props' className='navLink'>Props</Link ><br />
         </div>
     );
 };
